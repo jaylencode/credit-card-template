@@ -1,0 +1,182 @@
+/* ---Importing Font--- */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+/* ---Global Reset--- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ---Styling Section--- */
+.section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* ---Styling Section Before--- */
+.section::before {
+  content: "";
+  position: absolute;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  transform: translate(-150px, -100px);
+  background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+/* ---Styling Section After--- */
+.section::after {
+  content: "";
+  position: absolute;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  transform: translate(150px, 100px);
+  background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+/* ---Styling Container and Card--- */
+.container {
+  position: relative;
+  width: 375px;
+  height: 225px;
+  z-index: 100;
+  transition: 0.6s;
+  transition: 0.3 ease;
+}
+
+.container:hover {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: 0.3 ease;
+}
+
+.container .card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  border-radius: 25px;
+  backdrop-filter: blur(25px);
+  background: #ef233bba;
+  box-shadow: 0 25px 45px #ced4dac6;
+  border: 1px solid #ffffff1a;
+  backface-visibility: hidden;
+}
+
+/* ---Styling front-face, header, and logo--- */
+.front-face .header,
+.front-face .logo {
+  display: flex;
+  align-items: center;
+}
+
+/* ---Styling front-face, and header--- */
+.front-face .header {
+  justify-content: space-between;
+}
+
+/* ---Styling front-face, logo, and img--- */
+.front-face .logo img {
+  width: 48px;
+  margin-right: 10px;
+}
+
+/* ---Styling h5--- */
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ---Styling front-face, and chip--- */
+.front-face .chip {
+  width: 50px;
+}
+
+/* ---Styling front-face, and card-details--- */
+.front-face .card-details {
+  display: flex;
+  margin-top: 40px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* ---Styling h6--- */
+h6 {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+/* ---Styling h5.number--- */
+h5.number {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* ---Styling h5.name--- */
+h5.name {
+  margin-top: 20px;
+}
+
+/* ---Styling card.back-face--- */
+.card.back-face {
+  border: none;
+  padding: 15px 25px 25px 25px;
+  transform: rotateY(180deg);
+}
+
+/* ---Styling card.back-face h6--- */
+.card.back-face h6 {
+  font-size: 8px;
+}
+
+/* ---Styling card.back-face .magnetic-strip--- */
+.card.back-face .magnetic-strip {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background: #000;
+}
+
+/* ---Styling card.back-face .signature--- */
+.card.back-face .signature {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 80px;
+  width: 85%;
+  height: 40px;
+  border-radius: 6px;
+  background: repeating-linear-gradient(
+    #fff,
+    #fff 3px,
+    #efefef 0px,
+    #efefef 9px
+  );
+}
+
+/* ---Styling .signature i--- */
+.signature i {
+  color: #000;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: #fff;
+  margin-right: -30px;
+  z-index: -1;
+}
+
+/* ---Styling card.back-face h5--- */
+.card.card.back-face h5 {
+  font-size: 8px;
+  margin-top: 15px;
+}
